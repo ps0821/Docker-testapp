@@ -2,5 +2,24 @@
   "dependencies": {
     "express": "^4.21.2",
     "mongodb": "^6.13.0"
-  }
+  },
+  "name": "docker-testapp",
+  "version": "1.0.0",
+  "description": "docker testing app ",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shradha-khapra/docker-testapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shradha-khapra/docker-testapp/issues"
+  },
+  "homepage": "https://github.com/shradha-khapra/docker-testapp#readme"
 }
