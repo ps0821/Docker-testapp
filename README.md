@@ -33,29 +33,24 @@ Perfect for beginners to get hands-on experience with Docker.
 git clone https://github.com/ps0821/Docker-testapp.git
 cd Docker-testapp
 
-### 2️⃣ Build the Docker Image
-```bash
+# Clone the repository
+git clone https://github.com/ps0821/Docker-testapp.git
+cd Docker-testapp
+
+# Build the Docker image
 docker build -t docker-testapp .
-### 3️⃣ Run the Docker Container
-```bash
+
+# Run the Docker container on port 3000
 docker run -p 3000:3000 docker-testapp
-➡️ Now access the app at:
-🌐 http://localhost:3000
 
-## 🗂️ Project Structure
+# Your app is now accessible at:
+# http://localhost:3000
 
-Docker-testapp/
-├── Dockerfile         # Docker build file
-├── package.json       # Node.js dependencies
-├── index.js           # Main Node.js application
-└── README.md          # Project documentation (this file)
+# OPTIONAL Cleanup commands
+# Stop all running containers
+# docker stop $(docker ps -aq)
 
-##⚡ Useful Docker Commands
-
-Action	Command
-Build Docker image	docker build -t docker-testapp .
-Run Docker container	docker run -p 3000:3000 docker-testapp
-Stop all containers	docker stop $(docker ps -aq)
-Remove all containers	docker rm $(docker ps -aq)
+# Remove all containers (use with caution)
+# docker rm $(docker ps -aq)
 
 
